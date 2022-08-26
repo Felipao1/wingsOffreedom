@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 5 de JavaScript</title>
+</head>
+<body>
+  <h1>Conversor de Medidas de Distância</h1>
+  <input type="button"value= "Converter Medidas"onclick='calculaMedida()'>
+  <script>
+  var medidaAserConvertida=(window.prompt('Informe a medida em metros') );
+  var medidaEmDecametros=Number(medidaAserConvertida/10)
+  var medidaEmHectometros=Number(medidaAserConvertida/100)
+  var medidaEmQuilometros=Number(medidaAserConvertida/1000)
+  var medidaEmDecimetros=Number(medidaAserConvertida*10)
+  var medidaEmCentimetros=Number(medidaAserConvertida*100)
+  var medidaEmMilimetros=Number(medidaAserConvertida*1000)
+  function calculaMedida(){   
+ document.write(`<h1>A Distância de ${medidaAserConvertida} corresponde a...</h1><br>
+   
+     <strong>
+       ${medidaEmDecametros} Decâmetros<br>
+       ${medidaEmHectometros} Hectometros<br>
+       ${medidaEmQuilometros} Quilômetros<br>
+       ${medidaEmDecimetros} Decímetros<br>
+       ${medidaEmCentimetros} Centímetros<br>
+       ${medidaEmMilimetros} Milímetros.
+     </strong>`
+   )
+}
+</script>
+</body>
+</html>
