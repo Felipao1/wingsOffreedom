@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Monetário</title>
+   
+</head>
+<body>
+    <input type="button"value="Converter $"onclick="funçaoMoedas()">
+    <script>
+        var cotaçãoDoDolar = Number(window.prompt('Qual é a cotação do dolar de hoje'))
+        var dinheiroDisponivel =Number(window.prompt('Quanto dinheiro você tem?'))
+        var dolares = Number(dinheiroDisponivel/cotaçãoDoDolar)
+            function funçaoMoedas(){
+            document.write(`Com a cotação do dólar a ${cotaçãoDoDolar.toLocaleString('pt-Br',{style:'currency',currency:'BRL'})} reis e com ${dinheiroDisponivel.toLocaleString('pt-Br',{style:'currency',currency:'BRL'})} você conseguirá comprar${dolares.toLocaleString('pt-BR',{style:'currency',currency:'USD'})} dólares.`)
+            function moedas()
+            {cotaçãoDoDolar.toLocaleString('pt-Br',{style:'currency',currency:'BRL'})
+            dinheiroDisponivel.toLocaleString('pt-Br',{style:'currency',currency:'BRL'})
+            dolares.toLocaleString('pt-BR',{style:'currency',currency:'USD'})}
+
+        }
+        
+
+    </script>
+    <h1>Conversor R$-US$</h1> 
+
+</body>
+</html>
