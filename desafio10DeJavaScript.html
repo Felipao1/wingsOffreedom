@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula de Bhaskara</title>
+</head>
+<body>
+   <h1>Resolvendo Bhaskara</h1> 
+   <input type="button"value="Calcular"onclick="calcular()">
+   <div>Considerando a equação no formato ax²+bx+c=0, aperte o botão acima para calcular o valor de 9&#16
+    </div>
+    <script>
+        function calcular(){
+            var a=window.prompt('Qual é o valor de a?')
+            var b=window.prompt('Qual é o valor de b?')
+            var c=window.prompt('Qual é o valor de c?')
+            var delta=(b**2-4*a*c)
+            document.write(`<p>A equação atual é ${a}x²+${b}x+${c}
+                            <p>O cálculo realizado será &#916=${b}²-4.${a}.${c}
+                            <p>O valor de &#916 é ${delta}`)
+        }
+    </script>
+</body>
+</html>
