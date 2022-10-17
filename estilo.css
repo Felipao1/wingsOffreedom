@@ -17,10 +17,11 @@ section{
 
 
 }
-div#dados{
-    text-align: center;
-    padding: 8px;
-} 
+select#fLista{
+    width: 150px;
+}
+
+
 footer{
     color: white;
     text-align: center;
